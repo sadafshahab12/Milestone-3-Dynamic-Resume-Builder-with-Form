@@ -1,19 +1,20 @@
 let resumeForm = document.getElementById("resumeForm");
 resumeForm?.addEventListener("submit", (event) => {
   event.preventDefault();
-  let fNameElem = document.getElementById("fname") as HTMLImageElement;
-  let contactElem = document.getElementById("contact") as HTMLImageElement;
-  let emailElem = document.getElementById("email") as HTMLImageElement;
-  let addressElem = document.getElementById("address") as HTMLImageElement;
-  let yearElem = document.getElementById("year") as HTMLImageElement;
-  let fieldElem = document.getElementById("field") as HTMLImageElement;
-  let instituteElem = document.getElementById("institute") as HTMLImageElement;
-  let jobElem = document.getElementById("job") as HTMLImageElement;
-  let compElem = document.getElementById("comp") as HTMLImageElement;
-  let sdateElem = document.getElementById("sdate") as HTMLImageElement;
-  let edateElem = document.getElementById("edate") as HTMLImageElement;
-  let skillElem = document.getElementById("skill") as HTMLImageElement;
-  let objectiveElem = document.getElementById("objective") as HTMLImageElement;
+  let fNameElem = document.getElementById("fname");
+  let contactElem = document.getElementById("contact");
+  let emailElem = document.getElementById("email");
+  let addressElem = document.getElementById("address");
+  let yearElem = document.getElementById("year");
+  let fieldElem = document.getElementById("field");
+  let instituteElem = document.getElementById("institute");
+  let jobElem = document.getElementById("job");
+  let compElem = document.getElementById("comp");
+  let sdateElem = document.getElementById("sdate");
+  let edateElem = document.getElementById("edate");
+  let skillElem = document.getElementById("skill");
+  let objectiveElem = document.getElementById("objective");
+  let picElem = document.getElementById("profile-pic");
   if (
     fNameElem &&
     contactElem &&
@@ -27,7 +28,8 @@ resumeForm?.addEventListener("submit", (event) => {
     sdateElem &&
     edateElem &&
     skillElem &&
-    objectiveElem
+    objectiveElem &&
+    picElem
   ) {
     const fName = fNameElem.value;
     const contact = contactElem.value;
@@ -43,10 +45,13 @@ resumeForm?.addEventListener("submit", (event) => {
     const skill = skillElem.value;
     const objective = objectiveElem.value;
 
+    const profPic = picElem.files?.[0];
+    const profPicURL = profPic ? URL.createObjectURL(profPic) : "";
+
     let resumeOutput = `
       <div class="left">
         <h1>Dynamic Resume</h1>
-
+        ${profPicURL ? `<img src="${profPicURL}" class="pic" alt="">` : " "}
         <div class="objective">
           <h3>Objective</h3>
           <p> ${objective}</p>

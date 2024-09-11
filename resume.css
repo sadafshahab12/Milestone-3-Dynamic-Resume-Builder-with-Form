@@ -17,13 +17,15 @@
   background-color: #090101;
 }
 
-.prof-pic {
-  padding: 8rem;
-}
-.prof-pic h3 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem 0;
+.pic {
+  display: block;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 8rem;
+  border: 5px solid #097f84;
+  padding: 0.5rem;
+  object-fit: cover;
+  margin: 3rem auto 0;
 }
 
 .objective p {
@@ -38,12 +40,7 @@
   padding-bottom: 2rem;
   padding-top: 4rem;
 }
-.left img {
-  display: block;
-  margin: auto;
-  width: 14rem;
-  border-radius: 50%;
-}
+
 
 .right {
   border-top-right-radius: 3rem;
