@@ -3,144 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Builder</title>
-
-    <!-- font font-awesome cdn  -->
+    <title>Resume Builder | Code & Connect</title>
+    <link rel="stylesheet" href="./css/titlePage.css">
+    <link rel="stylesheet" href="./css/titlemedia.css">
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="resume.css" />
-    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
-    <h1>Dynamic Resume Builder</h1>
-    <form id="resumeForm">
-      <!-- Personal Information -->
-      <fieldset>
-        <legend>Personal Information</legend>
-        <div>
-          <label for="fname">Full Name</label>
-          <input
-            type="text"
-            placeholder="Enter Full Name"
-            id="fname"
-            required
-          />
-        </div>
-        <div>
-          <label for="contact">Phone Number</label>
-          <input
-            type="text"
-            placeholder="Enter Phone number"
-            id="contact"
-            required
-          />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            placeholder="Enter Email Address"
-            id="email"
-            required
-          />
-        </div>
-        <div>
-          <label for="address">Address</label>
-          <input
-            type="text"
-            placeholder="Enter Residential Address"
-            id="address"
-            required
-          />
-        </div>
-      </fieldset>
-      <!-- Education -->
-      <fieldset>
-        <legend>Education</legend>
-        <label for="field">Field of Study</label>
-        <input type="text" id="field" placeholder="Study Field" required />
-        <label for="institute">Institution Name</label>
-        <input
-          type="text"
-          id="institute"
-          placeholder="Institution Name/Academy Name/University Name"
-          required
-        />
-        <label for="year">Year</label>
-        <input type="text" id="year" placeholder="Year of Passing" required />
-      </fieldset>
-      <!-- Experience  -->
-      <fieldset>
-        <legend>Experience</legend>
-        <label for="job">Job Title</label>
-        <input
-          type="text"
-          placeholder="Enter Job Title Here"
-          id="job"
-          required
-        />
-        <label for="comp">Company Name</label>
-        <input
-          type="text"
-          placeholder="Enter Company Name"
-          id="comp"
-          required
-        />
-        <div class="exdate">
-          <div>
-            <label for="sdate">Start Date</label>
-            <input type="date" id="sdate" required />
-          </div>
-          <div>
-            <label for="edate">End Date</label>
-            <input type="date" id="edate" required />
-          </div>
-        </div>
-      </fieldset>
-      <!-- Skill  -->
-      <fieldset>
-        <legend>Skills</legend>
-        <label for="skill">Skill Name</label>
-        <input
-          type="text"
-          id="skill"
-          placeholder="Write your skills here"
-          required
-        />
-      </fieldset>
-      <!-- objective  -->
-      <fieldset>
-        <legend>Objective</legend>
-        <label for="objective">Career Objective</label>
-        <textarea
-          id="objective"
-          rows="3"
-          cols="10"
-          placeholder="Write your Career Object...."
-          required
-        ></textarea>
-      </fieldset>
-      <!-- profile pic  -->
-      <fieldset>
-        <legend>Add Profile Picture</legend>
-        <input type="file" id="profile-pic" accept="image/*" required />
-      </fieldset>
-      <input
-        type="submit"
-        value="Generate Resume"
-        class="generate"
-        id="generate-btn"
-      />
-    </form>
-    <div id="resume"></div>
-
-    <script src="/app.js"></script>
+    <p class="resume-head">Dynamic Resume Builder</p>
+    <div class="container">
+      <div class="logo">
+        <img src="./" alt="">
+      </div>
+      <h1>code & connect</h1>
+      <p class="tagline">Your Dream Job Starts Here – Create Your <span>Resume at No Cost!</span></p>
+      <p class="description">
+        Building a professional resume doesn’t have to be expensive. Our free
+        resume builder helps you create a polished, job-ready resume that stands
+        out to employers. Simple, fast, and free—start building your future
+        today!
+      </p>
+      <button class="getStarted">Get Started <span>(Build your Resume)</span></button>
+      <footer><p>Developed by | Sadaf Shahab</p></footer>
+      <script src="./js/title.js"></script>
+    </div>
   </body>
 </html>

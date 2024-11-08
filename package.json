@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.8.5"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.14.5"
   }
 }

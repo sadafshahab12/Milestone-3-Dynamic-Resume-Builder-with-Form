@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <meta
+      name="description"
+      content="I am Sadaf Shahab, I have created a free resume builder website. Use it in a free way and generate your simple resume"
+    />
+
+    <!-- font font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/resume.css" />
+    <link rel="stylesheet" href="./css/resumemedia.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"></div>
+      <h1>Sadaf Shahab</h1>
+      <p>Build Your Resume</p>
+    </header>
+
+    <div class="container">
+      <h1>Dynamic Resume Builder</h1>
+      <form id="resumeForm">
+        <!-- Personal Information -->
+        <fieldset class="personal-info">
+          <legend>Personal Information</legend>
+          <div>
+            <label for="fname">Full Name</label>
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              id="fname"
+              required
+            />
+          </div>
+          <div>
+            <label for="contact">Phone Number</label>
+            <input
+              type="text"
+              placeholder="Enter Phone number"
+              id="contact"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              id="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input
+              type="text"
+              placeholder="Enter Residential Address"
+              id="address"
+              required
+            />
+          </div>
+        </fieldset>
+        <!-- Education -->
+        <fieldset class="education">
+          <legend>Education</legend>
+          <div>
+            <label for="field">Field of Study</label>
+            <input type="text" id="field" placeholder="Study Field" required />
+          </div>
+          <div>
+            <label for="institute">Institution Name</label>
+            <input
+              type="text"
+              id="institute"
+              placeholder="Institution Name/Academy Name/University Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="institute">Grade/GPA:</label>
+            <input type="text" id="grade" placeholder="Grade / GPA" required />
+          </div>
+          <div>
+            <label for="year">Year</label>
+            <input
+              type="text"
+              id="year"
+              placeholder="Year of Passing"
+              required
+            />
+          </div>
+        </fieldset>
+        <!-- Experience  -->
+        <fieldset class="experience">
+          <legend>Experience</legend>
+          <div>
+            <label for="job">Job Title</label>
+            <input
+              type="text"
+              placeholder="Enter Job Title Here"
+              id="job"
+              required
+            />
+          </div>
+          <div>
+            <label for="comp">Company Name</label>
+            <input
+              type="text"
+              placeholder="Enter Company Name"
+              id="comp"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="sdate">Start Year</label>
+            <input type="text" id="sdate" required />
+          </div>
+          <div>
+            <label for="edate">End Year</label>
+            <input type="text" id="edate" required />
+          </div>
+          <div>
+            <label for="work">What was you working?</label>
+            <input
+              type="text"
+              placeholder="Enter you working in the previous company"
+              id="work"
+              required
+            />
+          </div>
+        </fieldset>
+        <!-- Skill  -->
+        <fieldset class="skills">
+          <legend>Skills</legend>
+          <label for="skill">Skill Name</label>
+          <input
+            type="text"
+            id="skill"
+            placeholder="Write your skills here"
+            required
+          />
+        </fieldset>
+        <!-- objective  -->
+        <fieldset>
+          <legend>Objective</legend>
+          <label for="objective">Career Objective</label>
+          <textarea
+            id="objective"
+            rows="3"
+            cols="10"
+            placeholder="Write your Career Object...."
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset class="language">
+          <legend>Language</legend>
+          <input type="text" placeholder="Enter Your Language" id="language" />
+        </fieldset>
+        <!-- profile pic  -->
+        <fieldset class="profile-sec">
+          <legend>Add Profile Picture</legend>
+          <input type="file" id="profile-pic" accept="image/*" required />
+        </fieldset>
+        <fieldset class="profile-sec">
+          <legend>Your Profession</legend>
+          <input
+            type="text"
+            id="profession"
+            placeholder="Your Profession"
+            required
+          />
+        </fieldset>
+
+        <input
+          type="submit"
+          value="Generate Resume"
+          class="generate"
+          id="generate-btn"
+        />
+      </form>
+    </div>
+
+    <div class="palette">
+      <div class="left-side-palette">
+        <h3>Left Side Palette</h3>
+        <div class="left-palette">
+          <p class="bg-color">
+            Background Color <input type="color" id="bgcolor" />
+          </p>
+          <p class="text-color">
+            Text Color <input type="color" id="textcolor" />
+          </p>
+        </div>
+      </div>
+      <div class="right-side-palette">
+        <h3>Right Side Palette</h3>
+        <div class="right-palette">
+          <p class="bg-color">
+            Background Color <input type="color" id="r-bgcolor" />
+          </p>
+          <p class="text-color">
+            Text Color <input type="color" id="r-textcolor" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="resume"></div>
+
+    <script src="/js/app.js"></script>
+    <script src="/resume.js"></script>
+  </body>
+</html>

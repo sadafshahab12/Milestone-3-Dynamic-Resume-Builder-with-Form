@@ -1,0 +1,182 @@
+#resume {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 0;
+  /* border: 5px double black; */
+  margin: 4rem 7rem;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.palette {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  gap: 1rem;
+}
+input[type="color"] {
+  width: 3.5rem;
+}
+.right-side-palette h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.left-side-palette h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.palette p {
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: rgb(246, 230, 125);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.palette p:hover {
+  background-color: rgb(211, 197, 105);
+}
+.palette p:active {
+  transform: scale(0.9);
+}
+.left {
+  justify-items: center;
+  grid-column: 1/3;
+  /* border: 1px solid #000; */
+  padding: 4rem;
+}
+.left p {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.resume-logo {
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid #000000;
+  padding: 0.3rem;
+  border-radius: 50rem;
+  margin-top: 3rem;
+}
+.resume-logo img {
+  border-radius: 50rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.resume-left-info {
+  padding: 3rem;
+}
+.resume-left-info .object-para {
+  text-align: justify;
+  line-height: 3rem;
+}
+.resume-left-info h1,
+.contact-info h1,
+.language h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.language p {
+  font-size: 1.5rem;
+}
+.contact-me {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+.contact-me .contact-icon {
+  font-size: 1.5rem;
+}
+.contact-info p {
+  padding: 0;
+}
+.right {
+  grid-column: 3/6;
+  border-left: 1px dashed #000;
+
+  padding: 5rem 0 5rem 5rem;
+}
+.resume-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.smallScreen {
+  display: none;
+}
+.mobScreen {
+  display: none;
+}
+.resume-head .name {
+  font-size: 7rem;
+  font-weight: 800;
+}
+.professional-info {
+  margin-top: 6rem;
+  display: grid;
+  gap: 5rem;
+}
+.prof-info {
+  line-height: 3rem;
+}
+.resume-head p {
+  font-size: 1.5rem;
+  background: #2b2a2a;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  display: inline-block;
+}
+.resume-education h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.resume-education p {
+  font-size: 1.5rem;
+}
+.resume-education h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.resume-education h3 {
+  font-size: 1.5rem;
+}
+.resume-experience h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.resume-experience p {
+  font-size: 1.5rem;
+}
+.resume-experience h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.resume-experience h3 {
+  font-size: 1.5rem;
+}
+.resume-experience .work {
+  font-size: 1.25rem;
+  margin-left: 3rem;
+  padding-left: 2rem;
+  line-height: 2rem;
+}
+.resume-skill h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.resume-skill h2 {
+  font-size: 1.5rem;
+}

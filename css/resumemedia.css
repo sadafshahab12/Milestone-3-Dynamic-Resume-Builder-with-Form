@@ -1,0 +1,73 @@
+@media only screen and (max-width: 400px) {
+  .resume-head .name {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  #resume {
+    display: block;
+    margin: 4rem 3rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .resume-head .name {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  .palette {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .left-palette , .right-palette{
+    display: flex;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #resume {
+    display: block;
+    margin: 4rem 3rem;
+    padding: 2rem;
+  }
+  .left {
+    justify-items: start;
+    padding: 0;
+  }
+  .resume-left-info {
+    padding: 3rem 0 0;
+  }
+  .smallScreen {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobScreen {
+    display: block;
+  }
+  .smallScreen h1 {
+    font-size: 4rem;
+  }
+  .webScreen {
+    display: none;
+  }
+  .resume-left-info .object-para {
+    line-height: 2.5rem;
+  }
+  .contact-me {
+    padding-bottom: 2rem;
+  }
+  .professional-info {
+    margin-top: 0rem;
+    gap: 3rem;
+  }
+  .right {
+    padding: 0rem 0 0 0rem;
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+}

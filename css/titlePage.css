@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(../image/bg-image.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+}
+.resume-head {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container h1 {
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.container .tagline {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.tagline span {
+  background: #f4b327;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  font-weight: 600;
+}
+.description {
+  font-size: 1.5rem;
+  width: 75%;
+  line-height: 3rem;
+  text-align: center;
+}
+.getStarted {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 5rem;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  background: rgb(2, 56, 139);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.getStarted:active {
+  transform: scale(0.95);
+}
+.getStarted span {
+  font-size: 1rem;
+}
+footer p{
+  font-size: 1.5rem;
+}
